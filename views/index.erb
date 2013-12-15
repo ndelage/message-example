@@ -1,0 +1,16 @@
+<html>
+
+<body>
+  <h1><%=@message%></h1>
+  <h2><%=@time%><h2>
+
+  <form action="/send_message" method="post">
+    <input type="text" name="message"/>
+    <input type="submit" val="Submit"/>
+  </form>
+  <pre>
+    <%= File.read("Gemfile") %>
+  </pre>
+</body>
+
+</html>

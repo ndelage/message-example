@@ -38,5 +38,4 @@ end
 m = Message.new("hello world")
 
 m.print
-m.print
 m.display_log

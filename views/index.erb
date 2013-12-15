@@ -1,7 +1,7 @@
 <html>
 
 <body>
-  <h1><%=@message%></h1>
+  <h1>Welcome <%=session[:username]%> <%=@message%></h1>
   <h2><%=@time%><h2>
 
   <form action="/send_message" method="post">

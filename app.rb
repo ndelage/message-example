@@ -1,4 +1,15 @@
 require 'sinatra'
+enable :sessions
+set :session_secret, 'OOGDYPEITMZAREJLOGCMXDLXIXQAOUTHGGPKBICW'
+
+PASSWORD = "foo"
+
+post('/login') do
+  if params[:password] == PASSWORD
+    session[:logged_in] = true
+  end
+end
+
 
 get('/hello') do
   @message = params[:message] || "Default Message"

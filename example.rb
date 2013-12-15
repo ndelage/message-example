@@ -28,9 +28,9 @@ class Message
 
   def get_message
     if rand(10) > 3
-      @config[:message]
+      @config[:message].upcase
     else
-      @config[:backup_messages].sample
+      @config[:backup_messages].sample.upcase
     end
   end
 end

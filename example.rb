@@ -27,7 +27,7 @@ class Message
   end
 
   def get_message
-    if rand(10) > 5
+    if rand(10) > 3
       @config[:message]
     else
       @config[:backup_messages].sample
